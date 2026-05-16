@@ -555,31 +555,15 @@ h1 .line3 { color: var(--text3); }
 }
 .perk-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--cyan); }
 
-.cta-form {
-  display: flex; gap: 0; max-width: 440px; margin: 0 auto 20px;
+.cta-note {
+  max-width: 520px; margin: 0 auto 28px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 13px; letter-spacing: 1px;
+  color: var(--text2);
+  text-align: center;
+  line-height: 1.8;
 }
-.cta-form input[type="email"] {
-  flex: 1; background: var(--bg3);
-  border: 1px solid var(--border2); border-right: none;
-  color: var(--text); font-family: 'Share Tech Mono', monospace;
-  font-size: 13px; letter-spacing: 1px; padding: 14px 18px;
-  outline: none; transition: border-color .2s;
-}
-.cta-form input::placeholder { color: var(--text3); }
-.cta-form input:focus { border-color: var(--cyan-hi); }
-.cta-form button {
-  font-family: 'Orbitron', monospace;
-  font-size: 11px; font-weight: 700; letter-spacing: 2px;
-  color: var(--bg); background: var(--cyan);
-  border: none; padding: 14px 24px; cursor: pointer; transition: all .2s;
-  clip-path: polygon(6px 0%, 100% 0%, calc(100% - 6px) 100%, 0% 100%);
-}
-.cta-form button:hover { box-shadow: 0 0 28px var(--cyan-hi); }
 
-.cta-success {
-  display: none; font-family: 'Share Tech Mono', monospace;
-  font-size: 13px; letter-spacing: 2px; color: var(--cyan); padding: 14px 0;
-}
 .cta-fine {
   font-family: 'Share Tech Mono', monospace;
   font-size: 10px; letter-spacing: 2px; color: var(--text3);
@@ -939,11 +923,7 @@ h1              { animation: fadeUp .6s .2s both; }
     <div class="perk"><div class="perk-dot" style="background:var(--red);"></div>INFLUENCE THE ROADMAP</div>
   </div>
 
-  <div class="cta-form" id="cta-form">
-    <input type="email" id="cta-email" placeholder="your@email.com" />
-    <button onclick="joinWaitlist('cta')">GET ACCESS</button>
-  </div>
-  <div class="cta-success" id="cta-success">✓ &nbsp;You're in. We'll reach out personally — not a bot.</div>
+  <div class="cta-note">Sign up is paused while we prepare the first launch batch. Email us to stay in the loop.</div>
   <p class="cta-fine">No spam. <span>One email when we're ready.</span> Unsubscribe any time.</p>
 </section>
 
